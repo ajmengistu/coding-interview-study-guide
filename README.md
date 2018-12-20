@@ -12,7 +12,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + ##### Enumeration vs. Iterator
   + ##### Collection Interface 
 #### Interview Questions:
-  + 1.1 <b>Is Unique<b>: 
+  + <b>1.1 Is Unique<b>: 
   + 1.2 Check Permutation:
   + 1.3 URLify:
   + 1.4 Palindrome Permutation:
