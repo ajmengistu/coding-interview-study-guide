@@ -45,3 +45,18 @@ This repository contains the notes I collected to prepare for a coding interview
   + 3.5 Sort Stack: Sort a stack such that the smallest items are on the top.
   + 3.6 Animal Shelter: 
  
+ ## Chapter 4: Trees & Graphs: 
+ 
+ #### Interview Questions:
+ 4.1 Route Between Nodes: Given a directed graph, find out whether there is a route between two nodes.
+ 4.2 Minimal Tree: Given a sorted (increasing order) array with unique integer elements, create a binary tree with minimal height.
+ 4.3 List of Depths: Given a binary tree, create a linked list of all the nodes at each depth.
+ 4.4 Check Balanced: Check if a binary tree is balanced, defined as a tree such that the heights of the two subtrees of any node never differ by more than one.
+ 4.5 Validate BST: Check if a binary tree is a binary search tree.
+ 4.6 Successor: Find the "next" node (in-order successor) of a given node in a binary search tree. Assume that each node has a link to its parent.
+ 4.7 Build Order: 
+ 4.8 First Common Ancestor: Find the first common ancestor of two nodes in a binary tree. Avoid storing additional nodes in a data structure. Note: This is not necessarily a binary search tree.
+ 4.9 BST Sequence: A binary search tree was created by traversing through an array from left to right and inserting each element. Given a binary search tree with distinct elements, printall possible arrays that could have led to this tree.
+ 4.10 Check Subtree: T1 and T2 are two very large binary trees, with T1 much bigger than T2. Determine if T2 is a subtree of T1.
+ 4.11 Random Node: 
+ 4.13 Paths with Sum: Given a binary tree with each node containing an integer value (positive or negative). Count the number of paths that sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards from the parent nodes to child nodes.
