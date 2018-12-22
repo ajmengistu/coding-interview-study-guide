@@ -60,3 +60,16 @@ This repository contains the notes I collected to prepare for a coding interview
   + 4.10 Check Subtree: T1 and T2 are two very large binary trees, with T1 much bigger than T2. Determine if T2 is a subtree of T1.
   + 4.11 Random Node: 
   + 4.13 Paths with Sum: Given a binary tree with each node containing an integer value (positive or negative). Count the number of paths that sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards from the parent nodes to child nodes.
+
+## Chapter 5: Bit Manipulation
+
+#### Interview Questions:
+  + 5.1 Insertion: 
+  + 5.2 Binary to String: Given a real number between 0 and 1 that is passed in as a double, print the binary representation. If the number cannot be represented accurately in binary with at most 32 characters, print "ERROR".
+  + 5.3 Flip Bit to Win: You have an integer and you can flip exactly one bit from a 0 to a 1. Find the length of the longest sequence of 1s you could create.
+  + 5.4 Next Number: Given a positive integer, print the next smallest and the next largest number that have the same number of 1 bits in their binary representation.
+  + 5.5 Debugger: Explain what the following code does: ((n & (n-1) == 0). 
+  + 5.6 Conversion: Determine the number of bits you would need to flip to convert integer A to integer B. 
+  + 5.7 Pairwise Swap: Swap odd and even bits in an integer with as few instructions as possible. 
+  + 5.8 Draw Line: A monochrome screen is stored as a single array of bytes, allowing eight consecutive pixels to be stored in one byte. The screen has width w, where w is divisible by 8 (i.e. no byte will be split across rows). The height of the screen can be derived from the length of the array and the width. Draw a horizontal line from (x1, y) to (x2, y).
+  
