@@ -73,3 +73,16 @@ This repository contains the notes I collected to prepare for a coding interview
   + 5.7 Pairwise Swap: Swap odd and even bits in an integer with as few instructions as possible. 
   + 5.8 Draw Line: A monochrome screen is stored as a single array of bytes, allowing eight consecutive pixels to be stored in one byte. The screen has width w, where w is divisible by 8 (i.e. no byte will be split across rows). The height of the screen can be derived from the length of the array and the width. Draw a horizontal line from (x1, y) to (x2, y).
   
+  ## Chapter 6: Math & Logical Puzzles
+  
+  #### Interview Questions:
+  + 6.1 The Heavy Pill: You have 20 bottles of pills. 19 bottles have 1.0 gram pills, but one has pills of weight 1.1 grams. Given a cale that provides an exact measurement. How would you find the heavy bottle? Note: You can only use the scale once.
+  + 6.2 Basketball: You have a basketball hoop and someone says that you can play one of two games. Game 1: You get one shot to make the hoops. Game 2: You get three shots and you have to make two of three shots. If p is the probability of making a particular shot, for which values of p should you pick one game or the other?
+  + 6.3 Dominos: There is an 8x8 chessboard in which two diagonally opposite corners have been cut off. You are given 31 dominos, and a single domino can cover exactly two squares. Can you use the 31 dominos to cover the entire board? Prove you answer (by providing an example or showing why it's impossible).
+  + 6.4 Ants on a Triangle: There are three ants on different vertices of a triangle. What is the probability of collision (between any two or all of them) if they start walking on the sides of the triangle? Assume that each ant randomly picks a direction, with either direction being equally likely to be chosen, and that they walk at the same speed. Similarly, find the probability of collision with n ants on an n-vertex polygon. 
+  + 6.5 Jugs of Water: You have a five-quart jug, and an unlimited supply of water
+  + 6.6 Blue-Eyed Island:
+  + 6.7 The Apocalypse:
+  + 6.8 The Egg Drop Problem:
+  + 6.9 100 Lockers:
+  + 6.10 Poison:
