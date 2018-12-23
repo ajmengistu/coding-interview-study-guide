@@ -86,3 +86,5 @@ This repository contains the notes I collected to prepare for a coding interview
   + 6.8 The Egg Drop Problem:
   + 6.9 100 Lockers:
   + 6.10 Poison:
+
+## Chapter 7: Object Oriented Programming
