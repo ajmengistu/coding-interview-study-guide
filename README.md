@@ -102,3 +102,26 @@ This repository contains the notes I collected to prepare for a coding interview
   + 7.10 Minesweeper:
   + 7.11 File System:
   + 7.12 Hash Table: Design and implement a hash table which uses chaining (linked lists) to handle collisions.
+
+## Chapter 8: Recursion & Dynamic Programming
+
+#### Interview Questions:
+
+  + 8.1 Triple Step: A child is running up a staircase with n steps and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many possible ways the hcild can run up the stairs.
+  + 8.2 Robot in a Grid: Imagine a robot sitting on the upper left corner of grid with r rows and c columns. The robot can only move in two directions, right and down, but certain cells are "off-limits" such that the robot cannot step on them. Design an algorithm to find a path for the robot from the top left to the bottom right. 
+  + 8.3 Magic Index: A magic index in an array A[0 ... n-1]  is defined to be an index such that A[i] = i. Given a sorted array of distinct integers, write a method to find a magic index, if one exists, in array A. 
+  + 8.4 Power Set: Write a method to return all subsets of a set.
+  + 8.5 Recursive Multiply: Write a recursive function to multiply two positive integers without using * operator. You can use addition, subtraction, and bit shifting, but you should minimize the number of those operations. 
+  + 8.6 Towers of Hanoi: In the classic problem of the Towers of Hanoi, you have 3 towers and N disks of different sizes which can slide onto any tower. The puzzle starts with disks sorted in ascending order of size from top to bottom (i.e., each disk sits on top of an even larger one). You have the following constraints:
+  * Only one disk can be moved at a time.
+  * A disk is slid off the otp of one tower onto another tower.
+  * A disk cannot be placed on top of a smaller disk.
+  * Write a program to move the disks from th efirst tower to the last usings stacks.
+  + 8.7 Permutations without Dups: Write a method to compute all permutations of a string of unique characters.
+  + 8.8 Permutations with Dups: Write a method to compute all permutations of a string whose characters are not necessarily unique. The list of permutations should not have duplicates.
+  + 8.9 Parens: Implement an algorithm to print all valid (e.g., properly opened and closed) combinations of n pairs of parentheses.
+  + 8.10 Paint Fill: Implement the 
+  + 8.11 Coins:
+  + 8.12 Eight Queens:
+  + 8.13 Stack of Boxes:
+  + 8.14 Boolean Evaluation:
