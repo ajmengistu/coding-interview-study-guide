@@ -99,4 +99,6 @@ This repository contains the notes I collected to prepare for a coding interview
   + 7.7 Chat Server: Explain how you would design a chat server. In particular, provide details about the varaious backend components, classes, and methods. What would be the hardest problems to solve?
   + 7.8 Othello: Othello is played as follows: Each Othello piece is white on one side and black on the other. When a piece is surrounded by its opponents on both the left and right sides, or both the top and bottom, it is said to be captured and its color is flipped. On you turn, you must capture at least one of your opponent's pieces. The game ends when either user has no more valid moves. The win assigned to the person with the most pieces. Implement the object oriented design for Othello.
   + 7.9 Circular Array: Implement a CircularArray class that supports an array-like data structure which can be efficiently rotated. If possible, the class should use a generic type (also called a template), and should support iteration via the standard for each loop (for (Obj 0 : circularArray) notation.
-  
+  + 7.10 Minesweeper:
+  + 7.11 File System:
+  + 7.12 Hash Table: Design and implement a hash table which uses chaining (linked lists) to handle collisions.
