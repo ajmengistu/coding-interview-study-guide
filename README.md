@@ -127,3 +127,17 @@ This repository contains the notes I collected to prepare for a coding interview
   + 8.14 Boolean Evaluation:
 
 ## Chapter 9: 
+
+## Chpater 10:
+#### Interview Questions:
+  + 10.1 Sorted Merge: Given two sorted arrays, A and B, where A has a large enough buffer at the end to hold B. Write a method to merge B into A in sorted order.
+  + 10.2 Group Anagrams: Sort an array of strings so that all the anagrams are next to each other.
+  + 10.3 Search in Rotated Array: Given a sorted array of n integers that has been rotated an unkown number of times, write code to find an element in the array. Assume that the array was orginally sorted in increasing order. 
+  + 10.4 Sorted Search, No Size: 
+  + 10.5 Sparse Search: Given a sorted array of strings that is interspersed with empty strings, write a method to find the location of a given string.
+  + 10.6 Sort Big File: Imagine you have a 20 GB file with one string per line. Explain how you would sort the file.
+  + 10.7 Missing Int: 
+  + 10.8 Find Duplicates:
+  + 10.9 Sorted Matrix Search:
+  + 10.10 Rank from Stream:
+  + 10.11 Peaks and Valleys:
