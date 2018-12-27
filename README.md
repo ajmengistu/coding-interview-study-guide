@@ -172,3 +172,22 @@ This repository contains the notes I collected to prepare for a coding interview
   + 14.5 Denormalization: What is denormalization? Explain the pros and cons?
   + 14.6 Entity-Relationship Diagram: Draw an entity-relationship diagram for a database with companies, people, and professionals (people who work for companies). 
   + 14.7 Design Grade Database: Imagine a simple database storing information for student's grades. Design what this database might look like and provide a SQL query to return a list of the honor roll students (top 10%), sorted by their grade point average.
+
+## Chapter 15: Threads & Locks:
+## Interview Questions:
+  + 15.1 Thread vs Process: What's the difference between a thread and a process?
+  + 15.2 Context Switch: How would you measure the time spent in a context switch?
+  + 15.3 Dining Philosophers: In the famous dining philosoper problem, a bunch of philosophers are sitting around a circular table with one chopstick between each of them. A philosopher needs both chopsticks to eat, and always picks up the left chopstick before the right one. A deadlock could potentially occur if all the philosophers reached for the left chopstick at the same time. Using threads and locks, implement a simulation of the dining philosopher problem that prevents dead-locks.
+  + 15.4 Deadlock-Free Class: Design a class which provides a lock only if there are no possible deadlocks.
+  + 15.5 Call In Order: Suppose we have the following code: <br />
+  ```
+  public class foo {
+    public Foo(){ ... }
+    public void first() { ... }
+    public void second() { ... }
+    public void third() { ... }
+  }
+  ```
+  The same instance of Foo will be passed to three different threads. ThreadA will call first, threadB will call second, and threadC will call third. Design a mechanism to ensure that first is called before second and second is called before third.
+  + 15.6 Synchronized Methods: You are given a class with synchronized method A and a normal method B, If you have two threads in one instance of a program, can they execute A at the same time? Can they execute A and B at the same time?
+  + 15.7 FizzBuzz: In the classic problem FizzBuzz, you are told to print the numbers from 1 to n. However, when the number is divisible by 3, print "Fizz". When it is divisible by 5, print "Buzz". When it is divisible by 3 and 5, print "FizzBuzz". In this problem, you are asked to do this in a multithreaded way. Implement a multithreaded version of FizzBuzz with four threads. One thread checks for divisiblity of 3 and prints "Fizz". Another thread is responsible for divisibility of 5 and prints "Buzz". A third thread is responsible for divisibility of 3 and 5 and prints "FizzBuzz". A fourth thread does the numbers. 
