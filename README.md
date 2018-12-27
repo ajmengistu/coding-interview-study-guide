@@ -128,7 +128,7 @@ This repository contains the notes I collected to prepare for a coding interview
 
 ## Chapter 9: 
 
-## Chpater 10:
+## Chapter 10:
 #### Interview Questions:
   + 10.1 Sorted Merge: Given two sorted arrays, A and B, where A has a large enough buffer at the end to hold B. Write a method to merge B into A in sorted order.
   + 10.2 Group Anagrams: Sort an array of strings so that all the anagrams are next to each other.
@@ -141,3 +141,12 @@ This repository contains the notes I collected to prepare for a coding interview
   + 10.9 Sorted Matrix Search:
   + 10.10 Rank from Stream:
   + 10.11 Peaks and Valleys:
+
+## Chapter 11: 
+#### Interview Questions:
+  + 11.1 Mistake: Find the mistake(s) in the following code:
+  + 11.2 Random Crashes:
+  + 11.3 Chess Test:
+  + 11.4 No Test Tools: How would you load test a webpage without using any test tools?
+  + 11.5 Test a Pen: How would you test a pen?
+  + 11.6 Test an ATM: How would you test an ATM in a distributed banking system?
