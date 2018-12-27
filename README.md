@@ -126,9 +126,9 @@ This repository contains the notes I collected to prepare for a coding interview
   + 8.13 Stack of Boxes:
   + 8.14 Boolean Evaluation:
 
-## Chapter 9: 
+## Chapter 9: System Design & Scalability
 
-## Chapter 10:
+## Chapter 10: Sorting and Searching
 #### Interview Questions:
   + 10.1 Sorted Merge: Given two sorted arrays, A and B, where A has a large enough buffer at the end to hold B. Write a method to merge B into A in sorted order.
   + 10.2 Group Anagrams: Sort an array of strings so that all the anagrams are next to each other.
@@ -142,7 +142,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + 10.10 Rank from Stream:
   + 10.11 Peaks and Valleys:
 
-## Chapter 11: 
+## Chapter 11: Testing
 #### Interview Questions:
   + 11.1 Mistake: Find the mistake(s) in the following code:
   + 11.2 Random Crashes:
