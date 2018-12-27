@@ -160,4 +160,4 @@ This repository contains the notes I collected to prepare for a coding interview
   + 13.6 Object Reflection: Explain what object reflection is in Java and why it is useful.
   + 13.7 Lambda Expressions: There is a class Country that has methods getContinent() and getPopulation(). Write a funciton 
   ```int getPopulation(List<Country> countries, String continent)``` that computes the total population of a given continent, given a list of all countries and the name of a continent.
-  13.8 Lambda Random: Using Lambda expressions, write a function ```List<Integer> getRandomSubset(List<Integer> list)``` that returns a random subset of arbitrary size. All subsets (including the empty set) should be equally likely to be chosen.
+  + 13.8 Lambda Random: Using Lambda expressions, write a function ```List<Integer> getRandomSubset(List<Integer> list)``` that returns a random subset of arbitrary size. All subsets (including the empty set) should be equally likely to be chosen.
