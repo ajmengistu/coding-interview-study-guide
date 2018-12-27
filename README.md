@@ -174,7 +174,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + 14.7 Design Grade Database: Imagine a simple database storing information for student's grades. Design what this database might look like and provide a SQL query to return a list of the honor roll students (top 10%), sorted by their grade point average.
 
 ## Chapter 15: Threads & Locks:
-## Interview Questions:
+#### Interview Questions:
   + 15.1 Thread vs Process: What's the difference between a thread and a process?
   + 15.2 Context Switch: How would you measure the time spent in a context switch?
   + 15.3 Dining Philosophers: In the famous dining philosoper problem, a bunch of philosophers are sitting around a circular table with one chopstick between each of them. A philosopher needs both chopsticks to eat, and always picks up the left chopstick before the right one. A deadlock could potentially occur if all the philosophers reached for the left chopstick at the same time. Using threads and locks, implement a simulation of the dining philosopher problem that prevents dead-locks.
