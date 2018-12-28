@@ -154,7 +154,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + 11.6 Test an ATM: How would you test an ATM in a distributed banking system?
 
 ## Chapter 13: Java
-## Interview Questions:
+#### Interview Questions:
   + 13.1 Private Constructor: In terms of inheritance, which is the effect of keeping a constructor private?
   + 13.2 Return from Finally: In Java, does the finally block get executed if we insert a return statement inside the try block of a try-catch-finally?
   + 13.3 Final, etc.: What is the difference between final, finally, and finalize?
@@ -166,7 +166,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + 13.8 Lambda Random: Using Lambda expressions, write a function ```List<Integer> getRandomSubset(List<Integer> list)``` that returns a random subset of arbitrary size. All subsets (including the empty set) should be equally likely to be chosen.
 
 ## Chapter 14: Dabases
-## Interview Questions:
+#### Interview Questions:
   + Questions 1 through 3 refer to the database schema at the end of the chapter. Each apartment can have multiple tenants, and each tenant can have multiple apartments. Each apartment belongs to one building, and each building belongs to one complex. 
   + 14.1 Multiple Apartments: Write a SQL query to get a list of tenants who are renting more than one apartment.
   + 14.2 Open Requests: Write a SQL query to get a list of all buildings and the number of open requests (Requests in which status equals 'Open').
