@@ -23,7 +23,6 @@ This repository contains the notes I collected to prepare for a coding interview
   + 1.9 String Rotation:
   
 ## Chapter 2: LinkedList
-
 #### Interview Questions:
 * <b>2.1 RemoveDups</b>: 
   Write code to remove duplicates from an unsorted linked list.
@@ -36,7 +35,6 @@ This repository contains the notes I collected to prepare for a coding interview
   + 2.8 Loop Detection: Given a circular linked list, return the node at the beginning of the loop.
 
 ## Chapter 3: Stacks & Queues:
-
 #### Interview Questions:
   + 3.1 Three in One: Describe how you could use a single array to implement three stacks.
   + 3.2 Stack Min: How would you design a stack which, in addition to push and pop, has a function min, which returns the minimum element? Push, pop and min should all operate in O(1) time.
@@ -45,8 +43,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + 3.5 Sort Stack: Sort a stack such that the smallest items are on the top.
   + 3.6 Animal Shelter: 
  
- ## Chapter 4: Trees & Graphs: 
- 
+ ## Chapter 4: Trees & Graphs:  
  #### Interview Questions:
   + 4.1 Route Between Nodes: Given a directed graph, find out whether there is a route between two nodes.
   + 4.2 Minimal Tree: Given a sorted (increasing order) array with unique integer elements, create a binary tree with minimal height.
@@ -62,7 +59,6 @@ This repository contains the notes I collected to prepare for a coding interview
   + 4.13 Paths with Sum: Given a binary tree with each node containing an integer value (positive or negative). Count the number of paths that sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards from the parent nodes to child nodes.
 
 ## Chapter 5: Bit Manipulation
-
 #### Interview Questions:
   + 5.1 Insertion: 
   + 5.2 Binary to String: Given a real number between 0 and 1 that is passed in as a double, print the binary representation. If the number cannot be represented accurately in binary with at most 32 characters, print "ERROR".
@@ -73,8 +69,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + 5.7 Pairwise Swap: Swap odd and even bits in an integer with as few instructions as possible. 
   + 5.8 Draw Line: A monochrome screen is stored as a single array of bytes, allowing eight consecutive pixels to be stored in one byte. The screen has width w, where w is divisible by 8 (i.e. no byte will be split across rows). The height of the screen can be derived from the length of the array and the width. Draw a horizontal line from (x1, y) to (x2, y).
   
-  ## Chapter 6: Math & Logical Puzzles
-  
+  ## Chapter 6: Math & Logical Puzzles  
   #### Interview Questions:
   + 6.1 The Heavy Pill: You have 20 bottles of pills. 19 bottles have 1.0 gram pills, but one has pills of weight 1.1 grams. Given a cale that provides an exact measurement. How would you find the heavy bottle? Note: You can only use the scale once.
   + 6.2 Basketball: You have a basketball hoop and someone says that you can play one of two games. Game 1: You get one shot to make the hoops. Game 2: You get three shots and you have to make two of three shots. If p is the probability of making a particular shot, for which values of p should you pick one game or the other?
@@ -88,7 +83,6 @@ This repository contains the notes I collected to prepare for a coding interview
   + 6.10 Poison:
 
 ## Chapter 7: Object Oriented Programming
-
 #### Interview Questions:
   + 7.1 Deck of Cards: Design the data structure for a generic deck of cards. Explain how you would subclass the data structure to implement blackjack.
   + 7.2 Call Center:
@@ -104,7 +98,6 @@ This repository contains the notes I collected to prepare for a coding interview
   + 7.12 Hash Table: Design and implement a hash table which uses chaining (linked lists) to handle collisions.
 
 ## Chapter 8: Recursion & Dynamic Programming
-
 #### Interview Questions:
 
   + 8.1 Triple Step: A child is running up a staircase with n steps and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many possible ways the hcild can run up the stairs.
@@ -127,6 +120,15 @@ This repository contains the notes I collected to prepare for a coding interview
   + 8.14 Boolean Evaluation:
 
 ## Chapter 9: System Design & Scalability
+#### Interview Questions: 
+  + 9.1 Stock Data: Imagine you are building some sort of service that will be called by up to 1,000 client applications to get simple end-of-day stock price information (open, close, high, low). You may assume that you already have the data, and you can store it in any format you wish. How would you design the client-facing service that provides the inforomation to client applications? You are responsible for the development, rollout, and ongoing monitoring and maintenance of the feed. Describe the different methods you considered and why you would recommend your approach. Your service can use any technologies you wish, and can distribute the information to the client application in any mechanism you choose.
+  + 9.2 Social Network: How would you design the data structure for a very large social network like Facebook or LinkedIn? Design how you would design an algorithm to show the shortest path between two people?
+  + 9.3 Web Crawler: If you were designing a web crawler, how would you avoid getting into infinite loops?
+  + 9.4 Duplicate URLs: You have 10 billion URLs. How would you detect the duplicate documents? In this case, assume "duplicate" means the URLs are identical.
+  + 9.5 Cache: Imagine a web server for a simplified search engine. This systemm has 100 machines to respond to search queries, which may then call out using ```processSearch(string query)``` to another cluster of machines to actually get the result. The machine which responds to a given query is chosen at random, so you cannot guarantee that the same machine will always respond to the same request. The method ```processSearch``` is very expensive. Design a caching mechanism for the most recent queries. Be sure to explain how you would update the cache when data changes.
+  + 9.6 Sales Rank: A large eCommerce wishes to list the best-selling products, overall and by category. For example, one product might be the #1056th best-selling product overall but the #13th best-selling product under "Sports Equipment" and the #24th best-selling product under "Safety". Describe how you would design this system?
+  + 9.7 Personal Financial Manager: Explain how you would design a personal financial manager (like mint.com). This system would connect to your bank accounts, analyze your spending habits, and make recommendations.
+  + 9.8 Pastebin: Design a system like pastebin, where a usercan enter a piece of text and get a randomly generated URL to access it.  
 
 ## Chapter 10: Sorting and Searching
 #### Interview Questions:
@@ -152,6 +154,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + 11.6 Test an ATM: How would you test an ATM in a distributed banking system?
 
 ## Chapter 13: Java
+## Interview Questions:
   + 13.1 Private Constructor: In terms of inheritance, which is the effect of keeping a constructor private?
   + 13.2 Return from Finally: In Java, does the finally block get executed if we insert a return statement inside the try block of a try-catch-finally?
   + 13.3 Final, etc.: What is the difference between final, finally, and finalize?
