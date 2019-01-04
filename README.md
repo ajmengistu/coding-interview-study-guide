@@ -10,7 +10,7 @@ This repository contains the notes I collected to prepare for a coding interview
 #### StringBuilder
 #### Supplemental Topics:
   + ##### Enumeration vs. Iterator
-  + ##### Collection Interface 
+  + ##### Collection Interface  
 #### Interview Questions:
   + <b>1.1 Is Unique<b>: 
   + 1.2 Check Permutation:
