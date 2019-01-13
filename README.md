@@ -197,3 +197,15 @@ This repository contains the notes I collected to prepare for a coding interview
   + 15.7 FizzBuzz: In the classic problem FizzBuzz, you are told to print the numbers from 1 to n. However, when the number is divisible by 3, print "Fizz". When it is divisible by 5, print "Buzz". When it is divisible by 3 and 5, print "FizzBuzz". In this problem, you are asked to do this in a multithreaded way. Implement a multithreaded version of FizzBuzz with four threads. One thread checks for divisiblity of 3 and prints "Fizz". Another thread is responsible for divisibility of 5 and prints "Buzz". A third thread is responsible for divisibility of 3 and 5 and prints "FizzBuzz". A fourth thread does the numbers. 
 
 ## Leet Code Top Interview Questions (Easy)
+### Array
+1.1 Remove Duplicates from Sorted Array
+1.2 Best Time to Buy and Sell Stocks
+1.3 Rotate Array
+1.4 Contains Duplicate
+1.5 Single Number
+1.6 Intersection of Two Arrays II
+1.7 Plus One
+1.8 Move Zeroes
+1.9 Two Sum
+2.0 Valid Sudoku
+2.1 Rotate Image
