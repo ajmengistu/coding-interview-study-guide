@@ -210,3 +210,7 @@ This repository contains the notes I collected to prepare for a coding interview
 2.0 Valid Sudoku
 2.1 Rotate Image
 ### Strings
+1.1 Reverse String
+1.2 Reverse Integer
+1.3 First Unique Character in a String
+1.4 Valid Anagram
