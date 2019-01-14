@@ -24,21 +24,19 @@ This repository contains the notes I collected to prepare for a coding interview
   + 1.8 Zero Matrix:
   + 1.9 String Rotation:
   
-<details>
-<summary>Chapter 2: LinkedList</summary>
 ## Chapter 2: LinkedList
-#### Interview Questions:
-   <b>2.1 RemoveDups</b>: 
-  Write code to remove duplicates from an unsorted linked list.
-  + <b>2.3 Return Kth to Last</b>: Implement an algorithm to find the kth to last element of a singly linked list.
-  + 2.3 Delete Middle Node: Implement an algorithm to delete a node in the middle (i.e. any node but the first and last node) of a singly linked list, given only access to that node.
-  + 2.4 Partition: 
-  + 2.5 Sum Lists: 
-  + 2.6 Palindrome: Check if a linked list is a palindrome.
-  + 2.7 Intersection: 
-  + 2.8 Loop Detection: Given a circular linked list, return the node at the beginning of the loop.
+<details>
+<summary>Interview Questions:</summary>
+ 
+  * 2.3 Return Kth to Last: Implement an algorithm to find the kth to last element of a singly linked list.
+  * 2.3 Delete Middle Node: Implement an algorithm to delete a node in the middle (i.e. any node but the first and last node) of a singly linked list, given only access to that node.
+  * 2.4 Partition: 
+  * 2.5 Sum Lists: 
+  * 2.6 Palindrome: Check if a linked list is a palindrome.
+  * 2.7 Intersection: 
+  * 2.8 Loop Detection: Given a circular linked list, return the node at the beginning of the loop.
 </details>
-  
+ 
 
 ## Chapter 3: Stacks & Queues:
 #### Interview Questions:
