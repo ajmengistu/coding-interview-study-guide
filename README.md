@@ -109,7 +109,7 @@ This repository contains the notes I collected to prepare for a coding interview
 
 ## Chapter 7: Object Oriented Programming
 <details>
- <summary<Interview Questions</summary>
+ <summary>Interview Questions</summary>
  
   + 7.1 Deck of Cards: Design the data structure for a generic deck of cards. Explain how you would subclass the data structure to implement blackjack.
   + 7.2 Call Center:
@@ -148,8 +148,11 @@ This repository contains the notes I collected to prepare for a coding interview
   + 8.13 Stack of Boxes:
   + 8.14 Boolean Evaluation:
 </details>
+
 ## Chapter 9: System Design & Scalability
-#### Interview Questions: 
+<details>
+ <summary>Interview Questions</summary>
+ 
   + 9.1 Stock Data: Imagine you are building some sort of service that will be called by up to 1,000 client applications to get simple end-of-day stock price information (open, close, high, low). You may assume that you already have the data, and you can store it in any format you wish. How would you design the client-facing service that provides the inforomation to client applications? You are responsible for the development, rollout, and ongoing monitoring and maintenance of the feed. Describe the different methods you considered and why you would recommend your approach. Your service can use any technologies you wish, and can distribute the information to the client application in any mechanism you choose.
   + 9.2 Social Network: How would you design the data structure for a very large social network like Facebook or LinkedIn? Design how you would design an algorithm to show the shortest path between two people?
   + 9.3 Web Crawler: If you were designing a web crawler, how would you avoid getting into infinite loops?
@@ -158,9 +161,12 @@ This repository contains the notes I collected to prepare for a coding interview
   + 9.6 Sales Rank: A large eCommerce wishes to list the best-selling products, overall and by category. For example, one product might be the #1056th best-selling product overall but the #13th best-selling product under "Sports Equipment" and the #24th best-selling product under "Safety". Describe how you would design this system?
   + 9.7 Personal Financial Manager: Explain how you would design a personal financial manager (like mint.com). This system would connect to your bank accounts, analyze your spending habits, and make recommendations.
   + 9.8 Pastebin: Design a system like pastebin, where a usercan enter a piece of text and get a randomly generated URL to access it.  
+</details>
 
 ## Chapter 10: Sorting and Searching
-#### Interview Questions:
+<details>
+ <summary>Interview Questions</summary>
+ 
   + 10.1 Sorted Merge: Given two sorted arrays, A and B, where A has a large enough buffer at the end to hold B. Write a method to merge B into A in sorted order.
   + 10.2 Group Anagrams: Sort an array of strings so that all the anagrams are next to each other.
   + 10.3 Search in Rotated Array: Given a sorted array of n integers that has been rotated an unkown number of times, write code to find an element in the array. Assume that the array was orginally sorted in increasing order. 
@@ -172,18 +178,24 @@ This repository contains the notes I collected to prepare for a coding interview
   + 10.9 Sorted Matrix Search:
   + 10.10 Rank from Stream:
   + 10.11 Peaks and Valleys:
+</details>
 
 ## Chapter 11: Testing
-#### Interview Questions:
+<details>
+ <summary>Interview Questions</summary>
+ 
   + 11.1 Mistake: Find the mistake(s) in the following code:
   + 11.2 Random Crashes:
   + 11.3 Chess Test:
   + 11.4 No Test Tools: How would you load test a webpage without using any test tools?
   + 11.5 Test a Pen: How would you test a pen?
   + 11.6 Test an ATM: How would you test an ATM in a distributed banking system?
+</details>
 
 ## Chapter 13: Java
-#### Interview Questions:
+<details>
+ <summary>Interview Questions</summary>
+ 
   + 13.1 Private Constructor: In terms of inheritance, which is the effect of keeping a constructor private?
   + 13.2 Return from Finally: In Java, does the finally block get executed if we insert a return statement inside the try block of a try-catch-finally?
   + 13.3 Final, etc.: What is the difference between final, finally, and finalize?
@@ -193,9 +205,11 @@ This repository contains the notes I collected to prepare for a coding interview
   + 13.7 Lambda Expressions: There is a class Country that has methods getContinent() and getPopulation(). Write a funciton 
   ```int getPopulation(List<Country> countries, String continent)``` that computes the total population of a given continent, given a list of all countries and the name of a continent.
   + 13.8 Lambda Random: Using Lambda expressions, write a function ```List<Integer> getRandomSubset(List<Integer> list)``` that returns a random subset of arbitrary size. All subsets (including the empty set) should be equally likely to be chosen.
+</details>
 
 ## Chapter 14: Dabases
-#### Interview Questions:
+<details>
+ <summary>Interview Questions</summary>
   + Questions 1 through 3 refer to the database schema at the end of the chapter. Each apartment can have multiple tenants, and each tenant can have multiple apartments. Each apartment belongs to one building, and each building belongs to one complex. 
   + 14.1 Multiple Apartments: Write a SQL query to get a list of tenants who are renting more than one apartment.
   + 14.2 Open Requests: Write a SQL query to get a list of all buildings and the number of open requests (Requests in which status equals 'Open').
@@ -204,9 +218,11 @@ This repository contains the notes I collected to prepare for a coding interview
   + 14.5 Denormalization: What is denormalization? Explain the pros and cons?
   + 14.6 Entity-Relationship Diagram: Draw an entity-relationship diagram for a database with companies, people, and professionals (people who work for companies). 
   + 14.7 Design Grade Database: Imagine a simple database storing information for student's grades. Design what this database might look like and provide a SQL query to return a list of the honor roll students (top 10%), sorted by their grade point average.
+</details>
 
 ## Chapter 15: Threads & Locks:
-#### Interview Questions:
+<details>
+ <summary>Interview Questions</summary>
   + 15.1 Thread vs Process: What's the difference between a thread and a process?
   + 15.2 Context Switch: How would you measure the time spent in a context switch?
   + 15.3 Dining Philosophers: In the famous dining philosoper problem, a bunch of philosophers are sitting around a circular table with one chopstick between each of them. A philosopher needs both chopsticks to eat, and always picks up the left chopstick before the right one. A deadlock could potentially occur if all the philosophers reached for the left chopstick at the same time. Using threads and locks, implement a simulation of the dining philosopher problem that prevents dead-locks.
@@ -223,22 +239,29 @@ This repository contains the notes I collected to prepare for a coding interview
   The same instance of Foo will be passed to three different threads. ThreadA will call first, threadB will call second, and threadC will call third. Design a mechanism to ensure that first is called before second and second is called before third.
   + 15.6 Synchronized Methods: You are given a class with synchronized method A and a normal method B, If you have two threads in one instance of a program, can they execute A at the same time? Can they execute A and B at the same time?
   + 15.7 FizzBuzz: In the classic problem FizzBuzz, you are told to print the numbers from 1 to n. However, when the number is divisible by 3, print "Fizz". When it is divisible by 5, print "Buzz". When it is divisible by 3 and 5, print "FizzBuzz". In this problem, you are asked to do this in a multithreaded way. Implement a multithreaded version of FizzBuzz with four threads. One thread checks for divisiblity of 3 and prints "Fizz". Another thread is responsible for divisibility of 5 and prints "Buzz". A third thread is responsible for divisibility of 3 and 5 and prints "FizzBuzz". A fourth thread does the numbers. 
+</details>
 
 ## Leet Code Top Interview Questions (Easy)
-### Array
-1.1 Remove Duplicates from Sorted Array
-1.2 Best Time to Buy and Sell Stocks
-1.3 Rotate Array
-1.4 Contains Duplicate
-1.5 Single Number
-1.6 Intersection of Two Arrays II
-1.7 Plus One
-1.8 Move Zeroes
-1.9 Two Sum
-2.0 Valid Sudoku
-2.1 Rotate Image
-### Strings
+<details>
+ <summary>Array</summary>
+
+* 1.1 Remove Duplicates from Sorted Array
+* 1.2 Best Time to Buy and Sell Stocks
+* 1.3 Rotate Array
+* 1.4 Contains Duplicate
+* 1.5 Single Number
+* 1.6 Intersection of Two Arrays II
+* 1.7 Plus One
+* 1.8 Move Zeroes
+* 1.9 Two Sum
+* 2.0 Valid Sudoku
+* 2.1 Rotate Image
+</details>
+
+<details>
+ <summary>Strings</summary>
 1.1 Reverse String
 1.2 Reverse Integer
 1.3 First Unique Character in a String
 1.4 Valid Anagram
+</details>
