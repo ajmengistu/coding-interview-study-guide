@@ -126,8 +126,9 @@ This repository contains the notes I collected to prepare for a coding interview
 </details>
 
 ## Chapter 8: Recursion & Dynamic Programming
-#### Interview Questions:
-
+<details>
+ <summary>Interview Questions</summary>
+ 
   + 8.1 Triple Step: A child is running up a staircase with n steps and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many possible ways the hcild can run up the stairs.
   + 8.2 Robot in a Grid: Imagine a robot sitting on the upper left corner of grid with r rows and c columns. The robot can only move in two directions, right and down, but certain cells are "off-limits" such that the robot cannot step on them. Design an algorithm to find a path for the robot from the top left to the bottom right. 
   + 8.3 Magic Index: A magic index in an array A[0 ... n-1]  is defined to be an index such that A[i] = i. Given a sorted array of distinct integers, write a method to find a magic index, if one exists, in array A. 
@@ -146,7 +147,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + 8.12 Eight Queens:
   + 8.13 Stack of Boxes:
   + 8.14 Boolean Evaluation:
-
+</details>
 ## Chapter 9: System Design & Scalability
 #### Interview Questions: 
   + 9.1 Stock Data: Imagine you are building some sort of service that will be called by up to 1,000 client applications to get simple end-of-day stock price information (open, close, high, low). You may assume that you already have the data, and you can store it in any format you wish. How would you design the client-facing service that provides the inforomation to client applications? You are responsible for the development, rollout, and ongoing monitoring and maintenance of the feed. Describe the different methods you considered and why you would recommend your approach. Your service can use any technologies you wish, and can distribute the information to the client application in any mechanism you choose.
