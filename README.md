@@ -61,8 +61,10 @@ This repository contains the notes I collected to prepare for a coding interview
   + 3.6 Animal Shelter: 
  </details>
  
- ## Chapter 4: Trees & Graphs:  
- #### Interview Questions:
+ ## Chapter 4: Trees & Graphs: 
+ <details>
+ <summary>Interview Questions</summary>
+ 
   + 4.1 Route Between Nodes: Given a directed graph, find out whether there is a route between two nodes.
   + 4.2 Minimal Tree: Given a sorted (increasing order) array with unique integer elements, create a binary tree with minimal height.
   + 4.3 List of Depths: Given a binary tree, create a linked list of all the nodes at each depth.
@@ -75,6 +77,8 @@ This repository contains the notes I collected to prepare for a coding interview
   + 4.10 Check Subtree: T1 and T2 are two very large binary trees, with T1 much bigger than T2. Determine if T2 is a subtree of T1.
   + 4.11 Random Node: 
   + 4.13 Paths with Sum: Given a binary tree with each node containing an integer value (positive or negative). Count the number of paths that sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards from the parent nodes to child nodes.
+ </details>
+  
 
 ## Chapter 5: Bit Manipulation
 #### Interview Questions:
