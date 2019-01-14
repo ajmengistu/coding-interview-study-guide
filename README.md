@@ -16,10 +16,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + ##### Enumeration vs. Iterator 
   + ##### Collection Interface 
  </details>
- 
-<!-- <details>
- <summary></summary>
- </details> -->
+
  #### Interview Questions:
  <details>
  <summary>Interview Questions</summary>
@@ -79,9 +76,10 @@ This repository contains the notes I collected to prepare for a coding interview
   + 4.13 Paths with Sum: Given a binary tree with each node containing an integer value (positive or negative). Count the number of paths that sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards from the parent nodes to child nodes.
  </details>
   
-
 ## Chapter 5: Bit Manipulation
-#### Interview Questions:
+<details>
+ <summary>Interview Questions</summary>
+ 
   + 5.1 Insertion: 
   + 5.2 Binary to String: Given a real number between 0 and 1 that is passed in as a double, print the binary representation. If the number cannot be represented accurately in binary with at most 32 characters, print "ERROR".
   + 5.3 Flip Bit to Win: You have an integer and you can flip exactly one bit from a 0 to a 1. Find the length of the longest sequence of 1s you could create.
@@ -90,9 +88,13 @@ This repository contains the notes I collected to prepare for a coding interview
   + 5.6 Conversion: Determine the number of bits you would need to flip to convert integer A to integer B. 
   + 5.7 Pairwise Swap: Swap odd and even bits in an integer with as few instructions as possible. 
   + 5.8 Draw Line: A monochrome screen is stored as a single array of bytes, allowing eight consecutive pixels to be stored in one byte. The screen has width w, where w is divisible by 8 (i.e. no byte will be split across rows). The height of the screen can be derived from the length of the array and the width. Draw a horizontal line from (x1, y) to (x2, y).
-  
+
+ </details>
+ 
   ## Chapter 6: Math & Logical Puzzles  
-  #### Interview Questions:
+  <details>
+ <summary>Interview Questions</summary>
+ 
   + 6.1 The Heavy Pill: You have 20 bottles of pills. 19 bottles have 1.0 gram pills, but one has pills of weight 1.1 grams. Given a cale that provides an exact measurement. How would you find the heavy bottle? Note: You can only use the scale once.
   + 6.2 Basketball: You have a basketball hoop and someone says that you can play one of two games. Game 1: You get one shot to make the hoops. Game 2: You get three shots and you have to make two of three shots. If p is the probability of making a particular shot, for which values of p should you pick one game or the other?
   + 6.3 Dominos: There is an 8x8 chessboard in which two diagonally opposite corners have been cut off. You are given 31 dominos, and a single domino can cover exactly two squares. Can you use the 31 dominos to cover the entire board? Prove you answer (by providing an example or showing why it's impossible).
@@ -103,9 +105,12 @@ This repository contains the notes I collected to prepare for a coding interview
   + 6.8 The Egg Drop Problem:
   + 6.9 100 Lockers:
   + 6.10 Poison:
+</details>
 
 ## Chapter 7: Object Oriented Programming
-#### Interview Questions:
+<details>
+ <summary<Interview Questions</summary>
+ 
   + 7.1 Deck of Cards: Design the data structure for a generic deck of cards. Explain how you would subclass the data structure to implement blackjack.
   + 7.2 Call Center:
   + 7.3 Jukebox: Design a musical jukebox using object-oriented principles
@@ -118,6 +123,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + 7.10 Minesweeper:
   + 7.11 File System:
   + 7.12 Hash Table: Design and implement a hash table which uses chaining (linked lists) to handle collisions.
+</details>
 
 ## Chapter 8: Recursion & Dynamic Programming
 #### Interview Questions:
