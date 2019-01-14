@@ -210,6 +210,7 @@ This repository contains the notes I collected to prepare for a coding interview
 ## Chapter 14: Dabases
 <details>
  <summary>Interview Questions</summary>
+  
   + Questions 1 through 3 refer to the database schema at the end of the chapter. Each apartment can have multiple tenants, and each tenant can have multiple apartments. Each apartment belongs to one building, and each building belongs to one complex. 
   + 14.1 Multiple Apartments: Write a SQL query to get a list of tenants who are renting more than one apartment.
   + 14.2 Open Requests: Write a SQL query to get a list of all buildings and the number of open requests (Requests in which status equals 'Open').
@@ -223,6 +224,7 @@ This repository contains the notes I collected to prepare for a coding interview
 ## Chapter 15: Threads & Locks:
 <details>
  <summary>Interview Questions</summary>
+  
   + 15.1 Thread vs Process: What's the difference between a thread and a process?
   + 15.2 Context Switch: How would you measure the time spent in a context switch?
   + 15.3 Dining Philosophers: In the famous dining philosoper problem, a bunch of philosophers are sitting around a circular table with one chopstick between each of them. A philosopher needs both chopsticks to eat, and always picks up the left chopstick before the right one. A deadlock could potentially occur if all the philosophers reached for the left chopstick at the same time. Using threads and locks, implement a simulation of the dining philosopher problem that prevents dead-locks.
@@ -260,8 +262,9 @@ This repository contains the notes I collected to prepare for a coding interview
 
 <details>
  <summary>Strings</summary>
-1.1 Reverse String
-1.2 Reverse Integer
-1.3 First Unique Character in a String
-1.4 Valid Anagram
+
+* 1.1 Reverse String
+* 1.2 Reverse Integer
+* 1.3 First Unique Character in a String
+* 1.4 Valid Anagram
 </details>
