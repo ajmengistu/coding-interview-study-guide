@@ -317,3 +317,41 @@ Note: Go back to an example. Try to move from the specific example to the genera
 Try a different data structure.
 
  </details>
+
+### Elements of the Programming Interview:
+<details>
+ <summary>Notes</summary>
+ 
+ ### Introduction:
+EPI aims to help engineers interviewing for software development positions. Primary focus on data structures (d.s.), algorithms (algors), system design (s.d.), and problem solving. 
+Don’t waste precious time on topics you do not need to know. Dijkstra’s and other related algorithms should not be of importance. Master array, linked lists and string problems. Then, trees and graphs. 
+### Chapter 1: 
+### Getting Ready:
+Before everything else, getting ready is the secret of success. -H. Ford.
+Strategies For a Great Interview
+The essence of strategy is choosing what not to do
+### Approaching the Problem:
+Clarify the question: A good way of clarifying the question is to state a concrete instance of the problem. For example, if the question is “find the first occurrence of a number greater than k in a sorted array”, you could ask “if the input array is <2,20,30> and k is 3, then are you supposed to return 1, the index of 20?” These questions can be formalized as unit tests.
+Ask interviewer what time and space complexity s/he would like in your solution.
+Work on concrete examples:
+Spell out the brute force solution:
+### Think out loud:
+Apply patterns from past problem:
+Focus on the top-level algorithms: Specify you will handle the main algorithm first, then the corner cases. Add TODO comments for portions that you want to come back to.
+### General Conversation:
+The point of this conversation is to answer the following questions:
+Can the candidate clearly communicate a complex idea?
+Is the candidate passionate about his work?
+Is there a potential interest match with some project?
+The only failures and mistakes in life are the ones you do not learn from.
+### Conducting An Interview:
+If you know both yourself and your enemy, you can win numerous battles without jeopardy. - “The Art of War”, Sun Tzu, 515 B.C.	
+### Problem Solving: 
+It’s not that I’m so smart, it’s just that I stay with problems longer. - A. Einstein
+Bear in mind developing problem solving skills is like learning to play a musical instrument--books and teachers can point you in the right direction, but only your hard work will take you there.
+### 4.1 Data structure review:
+1. d.s - is a way of storing and organizing related data items so that they can be manipulated efficiently. 
+2. Binary trees: used to represent hierarchical relationships.
+3. Hash Tables: a d.s. Used to store keys, optionally, with corresponding values. Inserts, deletes, and lookups run O(1) time on average. One caveat is that these functions require good hash function--a mapping from the set of all possible keys to the integers which is similar to a uniform random assignment. Another caveat is that if the number of keys that is to be stored is not known in advance then the hash table needs to be periodically resized, which depending on how the resizing is implemented, can lead to some updates having O(n) complexity. 
+
+ </details>
