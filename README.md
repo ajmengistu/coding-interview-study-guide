@@ -267,3 +267,53 @@ This repository contains the notes I collected to prepare for a coding interview
 * 1.3 First Unique Character in a String
 * 1.4 Valid Anagram
 </details>
+
+# Programming Interview Exposed 
+<details>
+ <summary>Reading Notes</summary>
+ 
+### Preface:
+You’ll get as much out of this book as you put into it. Take some time trying to work through the problems before you read the solutions. Deliberate practice.
+If you work on learning to solve not just the specific problems we present, but the types of problems we present, you’ll be able to handle anything they throw at you in an interview
+Learning by watching is never as effective as learning by doing. If you want to get the most out of this book, you will have to work out the problems yourself. 
+After you read a problem, put the book down and try to work out the solution.
+### Introduction:
+Landing a great programming job isn’t a matter of luck; it’s a matter of preparation. Software firms want to hire great programmers who can work well with others to successfully produce great products.
+Programming interview do not assess essential skills such as: communicating, teamwork, architecture, management of large codebases, discipline to consistently produce reliable code on schedule; and the ability to tackle a large projects.
+How to use the book: 
+Preparation is the key to mastering the programming interview process.
+Don’t skip or gloss over the material you don’t understand.
+### Chapter 1: Before the Search:
+The best programmers are passionate about their work.
+Know yourself: know they type of programmer you want to be.
+Do well in school: Although grades aren’t everything, they are one measure that companies use to rank new graduates with little job experience.
+### Chapter 2: The Job Application Process:
+When an offer is made, do not accept it immediately. Give yourself time to consider it.
+Look over the offer, try to negotiate a better deal, no matter what the recruiter says.
+Recruiter’s job is to do everything necessary to get you to accept the offer at the lowest possible salary.
+### Chapter 3: Approaches to Programming Problems:
+How a candidate performs during the programming interviews is the main determinant of whether an offer is made.
+Many of the questions are designed to take up to an hour to solve, so don’t get frustrated if you don’t see the answer right away. 
+Note: These problems are hard! Some of the questions are designed to see how you handle a problem when you don’t immediately see the solution. 
+### The Process
+The point of the coding questions is to determine how well you can code. It’s the most important part of the interview.
+Show the interviewer that you understand the underlying concepts, not that you’ve managed to memorize the answer to a programming puzzle.
+
+### Solving the Problems: (discussion between you and the interviewer)
+1. Make sure you understand the problem. Ask the right clarifying question.
+2. When you understand the question, try a simple example.
+3 a. Find the brute force solution.
+3 b. Focus on the algorithms and data structures you will use to solve the problem
+4. After you figure out your algorithm & how you can implement it, explain your solution to the interviewer. 
+5. While you code, explain what you’re doing. Narrate your code.
+6. Ask questions when necessary.
+7. After you write the code for a problem, immediately verify that the code works by tracing through it with an example.Helps to flush out minor errors and bugs.
+8. Make sure you check your code for all errors and special cases, especially boundary conditions. 
+9. State the time and space complexity.
+
+### When you get stuck:
+Show interest in the problem and keep trying to solve it.
+Note: Go back to an example. Try to move from the specific example to the general case and from there to the solution.
+Try a different data structure.
+
+ </details>
