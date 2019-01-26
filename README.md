@@ -268,7 +268,7 @@ This repository contains the notes I collected to prepare for a coding interview
 * 1.4 Valid Anagram
 </details>
 
-# Programming Interview Exposed 
+### Programming Interview Exposed 
 <details>
  <summary>Reading Notes</summary>
  
