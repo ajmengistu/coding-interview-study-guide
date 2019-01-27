@@ -16,7 +16,7 @@ This repository contains the notes I collected to prepare for a coding interview
   + ##### Collection Interface 
  </details> 
 
- #### Interview Questions:
+ #### Interview Questions: 
  <details>
  <summary>Interview Questions</summary>
  
