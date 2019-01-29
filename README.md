@@ -17,7 +17,7 @@ This repository contains the notes I collected to prepare for a coding interview
  </details> 
 
  #### Interview Questions: 
- <details>
+ <details> 
  <summary>Interview Questions</summary>
  
   + <b>1.1 Is Unique<b>: 
