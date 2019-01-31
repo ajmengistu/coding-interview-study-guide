@@ -31,7 +31,6 @@ This repository contains the notes I collected to prepare for a coding interview
   + 1.9 String Rotation:
  </details> 
  
-  
 ## Chapter 2: LinkedList
 <details>
 <summary>Interview Questions</summary>
