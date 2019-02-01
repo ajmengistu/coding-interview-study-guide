@@ -9,7 +9,7 @@ This repository contains the notes I collected to prepare for a coding interview
  #### Hash Tables: A data structure that maps keys to values for highly efficient look up.
  
 #### ArrayLists & Resizable Arrays   
- 
+   
 #### StringBuilder 
 #### Supplemental Topics:
   + ##### Enumeration vs. Iterator 
