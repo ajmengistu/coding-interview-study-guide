@@ -6,6 +6,7 @@ This repository contains the notes I collected to prepare for a coding interview
 <details>
  <summary>Notes</summary> 
   
+  
  #### Hash Tables: A data structure that maps keys to values for highly efficient look up.
  
 #### ArrayLists & Resizable Arrays   
