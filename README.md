@@ -1,4 +1,4 @@
-# coding-interview-study-guide
+# coding-interview-study-guide 
   
 This repository contains the notes I collected to prepare for a coding interview. These notes are based on the popular book: [Cracking the Coding Interview, 6th Edition](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850). 
 
