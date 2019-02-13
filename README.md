@@ -18,7 +18,7 @@ This repository contains the notes I collected to prepare for a coding interview
 
  #### Interview Questions: 
  <details> 
- <summary>Interview Questions</summary>
+ <summary>Interview Questions</summary> 
  
   + <b>1.1 Is Unique<b>: 
   + 1.2 Check Permutation:
