@@ -11,7 +11,7 @@ This repository contains the notes I collected to prepare for a coding interview
 #### ArrayLists & Resizable Arrays   
    
 #### StringBuilder 
-#### Supplemental Topics:
+#### Supplemental Topics: 
   + ##### Enumeration vs. Iterator 
   + ##### Collection Interface 
  </details> 
