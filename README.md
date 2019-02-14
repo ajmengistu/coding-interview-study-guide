@@ -21,6 +21,58 @@ This repository contains the notes I collected to prepare for a coding interview
  <summary>Interview Questions</summary> 
  
   + <b>1.1 Is Unique<b>: 
+  ```
+  
+Approach 1: Brute Force
+Run 2 loops with variables i and j. Compare string at i and j. If they become equal at any point, return false. 
+for (int i=0; i < str.length() - 1; i++)
+    for ( int j=i+1; j<str.length(); j++)
+        if(str[i] == str[j]) return false;
+TC: O(n’2), SC: O(1)
+Approach 2: Sorting
+Convert the string to char array for sorting. Use Arrays.sort() that gives O(nlgn) performance. Check array if any neighboring chars are identical. 
+Arrays.sort(str.toCharArray());
+for(int i=0; i < str.length() - 1; i++)
+    if(str[i+1] == str[i]) return false;
+return true;
+TC: O(nlgn)-merge sort ST: O(n)-merge sort.
+Approach 3: Use Extra Data Structure: Array (ASCII chars)
+TC: O(n) or O(1 or c); SP: O(n or c=128)
+Assuming ASCII chars, create an array of boolean values, where the flag at i indicates whether char. at i in the alphabet is contained in the string. The second time you see this char. You can immediately return false. Also, you can’t form a string of 280 unique chars out of 128 char alphabet. 
+boolean isUniqueChars(String str) {
+if (str.length() > 128) return false;
+
+boolean[] char_set = new boolean [128]];
+for(int i = 0; i < str.length(); i++){
+int val = str.charAt(i); // get ascii value
+if (char_set[val]) return false; // already found this char in string
+char_set[val] = true;
+}
+return true;
+}
+Unicode: 2^(16): 4 bytes = 65,536
+Extended ASCII: 2^(8): 1 byte = 256
+Can’t use additional data structures:
+Compare every char of the string to every other char of the string. This will take O(n’2) and O(1) space.
+If allowed to modify the input string, we could sort the string in O(nlgn) time and linearly check the string for neighboring chars that are identical. Careful, some sorting algorithms take up extra space.
+#2.TC:(n); SP(n) or O(1)
+ boolean isUniqueChars(String str) {
+int checker = 0;
+for (int i = 0; i < str.length(); i++) {
+        int val = str.charAt(i) - 'a';
+ if ((checker & (1 <<  val)) > 0) {
+       return false;
+ }
+ checker |= (1 << val);
+ }
+  return true;
+}
+Approach 3: Bit Manipulation (Without Extra Data Structure)
+If we can’t use additional data structures, we can do the following:
+Compare every char of the string to every other char. O(n^2), O(1)
+If allowed to modify the input string, we could sort in O(nlogn) time and linearly check for neighboring chars that are identical. 
+
+  ```
   + 1.2 Check Permutation:
   + 1.3 URLify:
   + 1.4 Palindrome Permutation:
