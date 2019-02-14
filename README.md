@@ -20,10 +20,11 @@ This repository contains the notes I collected to prepare for a coding interview
  <details> 
  <summary>Interview Questions</summary> 
  
-  + <b>1.1 Is Unique<b>: 
+  <details>
+    <summary>1.1 IsUnique</summary>
+    
   ```
-  
-Approach 1: Brute Force
+  Approach 1: Brute Force
 Run 2 loops with variables i and j. Compare string at i and j. If they become equal at any point, return false. 
 for (int i=0; i < str.length() - 1; i++)
     for ( int j=i+1; j<str.length(); j++)
@@ -71,8 +72,10 @@ Approach 3: Bit Manipulation (Without Extra Data Structure)
 If we can’t use additional data structures, we can do the following:
 Compare every char of the string to every other char. O(n^2), O(1)
 If allowed to modify the input string, we could sort in O(nlogn) time and linearly check for neighboring chars that are identical. 
-
   ```
+  
+  </details>
+  
   + 1.2 Check Permutation:
   + 1.3 URLify:
   + 1.4 Palindrome Permutation:
