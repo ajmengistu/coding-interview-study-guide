@@ -66,7 +66,7 @@ for (int i = 0; i < str.length(); i++) {
  }
  checker |= (1 << val);
  }
-  return true;
+ return true;
 }
 Approach 3: Bit Manipulation (Without Extra Data Structure)
 If we can’t use additional data structures, we can do the following:
