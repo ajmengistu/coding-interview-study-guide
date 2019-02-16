@@ -301,6 +301,24 @@ If allowed to modify the input string, we could sort in O(nlogn) time and linear
  <summary>Array</summary>
 
 * 1.1 Remove Duplicates from Sorted Array
+```
+Approach 1: Two Pointers
+Since the array is already sorted, we can keep two pointers i and j, where i is the slow-runner and j is the fast-runner. As long as nums[i] = nums[j], we increment j to skip the duplicate. 
+When we encounter nums[i] /=  nums[j], the duplicate run has ended, so we must copy its value to nums[i + 1], i is then incremented and we repeat the same process again until j reaches the end of the array.
+public int removeDuplicates(int[] nums) {
+        if(nums.length <= 1 ) return nums.length; 
+        int i = 0;
+        for(int j = 1; j < nums.length; j++){
+            if(nums[i] != nums[j]){
+                nums[++i] = nums[j]; 
+            }
+        }
+        return i + 1;
+ }
+ ```
+
+Time: O(n), n being the length of the array, Space: O(1)
+
 * 1.2 Best Time to Buy and Sell Stocks
 * 1.3 Rotate Array
 * 1.4 Contains Duplicate
