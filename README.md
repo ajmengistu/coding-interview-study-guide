@@ -320,6 +320,14 @@ public int removeDuplicates(int[] nums) {
 Time: O(n), n being the length of the array, Space: O(1)
 
 * 1.2 Best Time to Buy and Sell Stocks
+```
+public int maxProfit(int[] prices) {
+        int profit = 0;        
+        for(int i = 0; i < prices.length - 1; i++) {
+            if(prices[i + 1] > prices[i]) profit += (prices[i + 1] -   prices[i]);
+        }        
+        return profit;
+}```
 * 1.3 Rotate Array
 * 1.4 Contains Duplicate
 * 1.5 Single Number
