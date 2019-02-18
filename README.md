@@ -77,6 +77,43 @@ If allowed to modify the input string, we could sort in O(nlogn) time and linear
   </details>
   
   + 1.2 Check Permutation:
+  
+  ```
+  1.2 Check Permutation:  Given two strings, write a method to decide if one is a permutation of the other. 
+------------------------------------------------------------------------------------------------------------
+Ask: if permutation is case sensitive, whitespace significant? “God” vs “dog”, “dog“ vs dog         ”.
+Approach #1: Sort the strings
+Observe: strings of different lengths cannot be permutations of each other. If two strings are permutations, they have the same characters, but in different orders. Therefore, sorting the strings will put the chars from two permutation in the same order. Simply, compare sorted versions of the string in one pass. 
+Sort the string, simple and easy to understand, but not optimal.
+String sort(String s){
+char[] content = s.toCharArray();
+java.util.Arrays.sort(content);
+return new String(content);
+}
+boolean permutations(String s, String t){
+If (s.length( ) != t.length()) return false;
+else return sort(s).equals(sort(t));
+}
+Note: more clean, simple, and easy to understand. 
+Time: O(nlgn). Space:O(n)
+Approach #2: Array to store char count.
+Check if two strings have identical character counts. We simply iterate through the str1, count how many times each unique char appears. Then, afterwards compare the two strings.
+boolean permutation(String s, String t){
+if(s.length() != t.length()) return false;
+int [] letters = new int[128] // Assumption ASCII
+// count the num of char is s.
+for(int i=0; i < a.length(); i++){
+int c = (int) s.charAt(i);
+letters[c]++;
+}
+for(int i = 0; i < t.length(); i++){
+// not a permutation
+if(--t[i] < 0) return false;
+}
+}
+Time: O(n). Space: O(c) c-128..
+
+  ```
   + 1.3 URLify:
   + 1.4 Palindrome Permutation:
   + 1.5 One Away: 
