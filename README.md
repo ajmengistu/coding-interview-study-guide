@@ -144,7 +144,6 @@ Time: O(n). Space O(n).
 
   </details>
   
-  + 1.4 Palindrome Permutation:
   <details>
     <summary>1.4 Palindrome Permutation</summary>
   
