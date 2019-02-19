@@ -145,6 +145,83 @@ Time: O(n). Space O(n).
   </details>
   
   + 1.4 Palindrome Permutation:
+  <details>
+    <summary>1.4 Palindrome Permutation</summary>
+  
+```
+1.4 Palindrome Permutation: Given a string, check if it is a permutation of a palindrome. A palindrome is a word or phrase that is same forwards and backwards. A permutation is a rearrangement of letters. 
+------------------------------------------------------------------------------------------------------------
+Alternative: Find the number of distinct permutations of a string. Solution: divide the factorial of the length of the string by the multiplication of the factorial of the frequency of each unique char in the string. (n!/a1!*a2!*ak!)
+
+To decide if a string is a permutation of palindrome, we need to know if it can be written/rearranged such that it’s the same forwards and backwards. What does it take to be able to write a set of characters forwards and backwards? We need to have an even number of almost all characters, so that half can be on one side and half can be on the other side. At most one character (the middle character) can have an odd count.  For example, “tactcopapa” is a permutation of a palindrome because it has two Ts, four As, two Ps, and one O. The O can be the center of all possible palindromes.
+
+Infeasible Approach: “Create all possible permutations and check if they are palindromes”. Such solution would work, however it’s entirely infeasible in the real world. Generating all permutations requires factorial time. (which is actually worse than exponential time.). Note: it is essentially infeasible to perform on strings longer than about 10-15 chars. You don’t need to generate all permutations in order to check if one is a palindrome. 
+
+Approach 1
+If a string with an even length is a palindrome, every character in the string must always occur an even number of times. If the string with an odd length is a palindrome, every unique character except one of the characters must always occur an even number of times. Thus, in case of a palindrome, the number of characters with odd number of occurrences can’t exceed 1.
+Iterate over all the characters from 0 to 127. For every character chosen, we again iterate over the given string s and find the number of occurrences, of the current char in s. We keep a variable oddCount to keep track of the number of chars with odd number of occurrences. If the current considered char happens to be odd, we increment the oddCount. If the oddCount becomes greater than 1, it indicates that the given string s can’t lead to the formation of a palindromic permutation based on above reasoning. 
+    public boolean canPermutePalindrome(String s) {
+        int count = 0;
+        for (char i = 0; i < 128 && count <= 1; i++) {
+            int ct = 0;
+            for (int j = 0; j < s.length(); j++) {
+                if (s.charAt(j) == i)
+                    ct++;
+            }
+            count += ct % 2;
+        }
+        return count <= 1;
+    }
+Time: O(128*n). Space: O(1)
+ Approach 2: Using HashMap
+
+Essentially, we need to count the number of chars with odd number of occurrences in the given string s. Use a hashmap to map a char to its frequency in the string. To do, traverse over the given string in one pass; For every new char found in s, we create a new entry in the map for this char with the frequency of 1. Whenever, we find the same char again, we update the frequency appropriately. At the end, traverse over the map and if the count of number of odd frequencies is greater than one, we immediately return false. Otherwise, a palindromic permutation is possible with the given string s. Alternatively, array of size 128 can be used for mapping.
+public boolean canPermutePalindrome(String s) {
+     HashMap < Character, Integer > map = new HashMap < > ();
+     //  int[] map = new int[128];
+     for (int i = 0; i < s.length(); i++) {
+         map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
+     }
+     int count = 0;
+     for (char key: map.keySet()) {
+         count += map.get(key) % 2;
+         if(count > 1) return false;
+     }
+     return true;;
+ }
+Time: O(n). Space: O(n)
+Approach 3: Single Pass
+Instead of running through the mapping to determine the odd count in s, we can determine the odd count in one pass over s. Traverse over s and update the frequency for the current char enountered. Whenever we update an entry in map, we also check if its value becomes even or odd. We start count value of 0. If the value of the entry just updated in map happens to be odd, we increment the value of count to indicate that one more char with odd number of occurrences has been found. However, we need to traverse till the end of the string to determine the final result, unlike the last approaches, we could stop the traversal over map as soon as the count exceeded one.
+public boolean canPermutePalindrome(String s) {
+        int[] map = new int[128];
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            map[s.charAt(i)]++;
+            if (map[s.charAt(i)] % 2 == 0)
+                count--;
+            else
+                count++;
+        }
+        return count <= 1;
+    }
+Time: O(n). Space: O(c), c = 128.
+Approach 4: Using Set
+Use a set to keep track of the number of elements with odd number of occurrences in s. When we initially find the char we add it the entry indicating an odd number of occurrences currently for the given string, and remove it if we find it again indicating an even number of occurrences currently. At the end, the size of set indicates the number of elements with odd number of occurrences in s. 
+public boolean canPermutePalindrome(String s) {
+        Set < Character > set = new HashSet < > ();
+        for (int i = 0; i < s.length(); i++) {
+            if (!set.add(s.charAt(i)))
+                set.remove(s.charAt(i));
+        }
+        return set.size() <= 1;
+    }
+Time: O(n). Space(n)
+
+
+```
+
+
+  </details>
   + 1.5 One Away: 
   + 1.6 String Compression:
   + 1.7 Rotate Matrix:
