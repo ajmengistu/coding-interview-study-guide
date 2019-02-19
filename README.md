@@ -72,13 +72,15 @@ Approach 3: Bit Manipulation (Without Extra Data Structure)
 If we can’t use additional data structures, we can do the following:
 Compare every char of the string to every other char. O(n^2), O(1)
 If allowed to modify the input string, we could sort in O(nlogn) time and linearly check for neighboring chars that are identical. 
+
   ```
   
   </details>
+     
+  <details>
+    <summary>1.2 Check Permutation</summary>
   
-  + 1.2 Check Permutation:
-  
-  ```
+```
   1.2 Check Permutation:  Given two strings, write a method to decide if one is a permutation of the other. 
 ------------------------------------------------------------------------------------------------------------
 Ask: if permutation is case sensitive, whitespace significant? “God” vs “dog”, “dog“ vs dog         ”.
@@ -112,8 +114,11 @@ if(--t[i] < 0) return false;
 }
 }
 Time: O(n). Space: O(c) c-128..
+```
 
-  ```
+
+  </details>
+  
   + 1.3 URLify:
   + 1.4 Palindrome Permutation:
   + 1.5 One Away: 
