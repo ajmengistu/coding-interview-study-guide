@@ -1,6 +1,6 @@
 # coding-interview-study-guide 
   
-This repository contains the notes I collected to prepare for a coding interview. These notes are based on the popular book: [Cracking the Coding Interview, 6th Edition](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850). 
+This repository contains the notes I've collected to prepare for a coding interview. These notes are based on the popular book: [Cracking the Coding Interview, 6th Edition](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850) and [Leetcode](https://leetcode.com/explore/interview/card/top-interview-questions-easy/). 
 
 ## Chapter 1: Arrays & Strings
 <details>
