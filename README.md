@@ -218,10 +218,84 @@ Time: O(n). Space(n)
 
 
 ```
+  </details>
+  
+  
+  <details>
+    <summary>1.5 OneAway</summary>
+  
+```
+1.5 One Away: Three types of edits that can be performed on strings: insert, remove, replace a char. Given two strings, check if they are one edit(or zero edits) away.
+----------------------------------------------------------------------------------------------------------
+Approach 1: Brute Force
+Check all possible strings that are one edit away by testing the removal of each character (and comparing), testing the replacement of each character (and comparing), and then testing the insertion of each character (and comparing).
+This is one of those problems where it’s helpful to think about the “meaning” of each of these operations.  What does it mean for two strings to be one insertion, replacement, or removal away from each other?
+Replacement: the two strings are different only in one place. Ex: bale and pale, are one replacement away.
+Insertion: two strings will be identical, except for a shift at some point in the string. Apple and aple-one insertion away.
+Removal: removal is just the inverse of insertion. Apple and aple are one removal away.
+Approach 1: check for insert and replace edit
+// check if you can insert a char into s1 to make s2
+boolean oneEditInsert(String s1, String s2){
+int index1 = 0;
+int index2 = 0;
+while (index2 < s2.length() && index1 < s1.length()){
+    if (s1.charAt(index1) != s2.charAt(index2))
+        If (index1 != index2) return false;
+       index2++;
+   else 
+    index1 ++;
+    index2 ++;
+}
+return true;
+}
+boolean oneEditReplace(String s1, String s2){
+    Boolean found_difference = false;
+    for (int i = 0; i < s1.length(); i++) 
+       if (s1.charAt(i) != s2.charAt(i)) 
+        if (found_difference) return false;
+        found_difference = true;
+   return true;
+}
+// main
+boolean oneEditAway(String first, String second) {
+   if (first.length() == second.length()) return oneEditReplace(first, second);
+   else  if (first.length() + 1 == second.length()) return OneEditInsert(first,sec);
+   else if (first.length() - 1 == second.length()) oneEditInsert(second, first);
+   return false;
+}
+Time: O(n). Space: O(1).
+Approach 2: Merge two methods into one.
+To do this, observe that both methods follow similar logic: compare each char and ensure the strings are only different by one. The methods vary in how they handle that difference. The method oneEditReplace does nothing other than flag the difference, whereas oneEditInsert increments the pointer to the longer string. We can handle both of these in the same method.
+boolean oneEditAway(String first, String second){
+    // length check
+    if (Math.abs(first.length() - second.length()) > 1) return false;
+    // get shorter and longer string
+    String s1 = first.length() < second.length() ? first : second;
+    String s2 = first.length() < second.length() ? second : first;
+
+   int index1 = 0, index2 = 0;
+   boolean found_diff = false;
+   while(index2 < s2.length() && index1 < s1.length()){
+      if (s1.charAt(index1) != s2.charAt(index2)) {
+        // Ensure that this is the first difference found
+       if (found_diff) return false;
+        found_diff = true;
+       if (s1.length() == s2.length()) index1 ++;// On replace, move shorter pointer
+    else index1 ++; // if matching, move shorter pointer
+    index2 ++; // always move pointer for longer string
+     }
+   }
+return true;
+}
+Time: O(n). Space: O(n).
+Some might argue first approach is better as it is clearer and easier to follow.
+Others argue, second approach is better, since it’s more compact and doesn’t duplicate code, which is can facilitate maintainability.
+
+```
 
 
   </details>
-  + 1.5 One Away: 
+  
   + 1.6 String Compression:
   + 1.7 Rotate Matrix:
   + 1.8 Zero Matrix:
