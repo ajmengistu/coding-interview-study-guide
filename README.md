@@ -295,8 +295,76 @@ Others argue, second approach is better, since it’s more compact and doesn’t
 
 
   </details>
+   <details>
+    <summary>1.6 String Compression</summary>
   
-  + 1.6 String Compression:
+```
+1.6 String Compression: using counts of repeated chars. aaab -> a3b.
+Implement a method to perform basic string compression using the counts of repeated characters. If the “compressed” string would not become smaller than the original string, return original string. Assume string has only uppercase and lowercase letters.
+Approach 1: Copy char & count repeats
+Iterate the string, copying characters to a new string and counting the repeats. At each iteration, check if the current char is the same as the next char. If not, add its compressed version to the result.
+String compressBad(String str) {
+    String compressed_string = “”;
+    Int count_consecutive = 0;
+    for (int i =0; i < str.length(); i++) {
+       count_consecutive ++; 
+       // If next char is different than the current, append this char to result
+       if (i + 1 >= str.length() || str.charAt(i) != str.charAt(i+1))
+            compressed_string += “”+str.charAt(i) + count_consecutive;
+            count_consecutive = 0;
+   }
+    return compressed_string.length() < str.length() ? compressed_string : str;
+}
+Time: O(p + K2) = O(n^2)-n number of char in sequence. String concatenation operates in O(n2)). You have to copy old chars to new String and then copy new strings to be concatenated. 
+Approach 2: Using StringBuilder
+String compress(String str) {
+    StringBuilder compressed = new StringBuilder();
+    Int count_consecutive = 0;
+    for (int i = 0; i < str.length(); i++)
+        count_consecutive ++;
+    // next char is different than current, append this char to result
+    if (i + 1>= str.length() || str.charAt(i) != str.charAt(i+1)
+        compressed.append(str.charAt(i))
+        compressed.append(count_consecutive);
+        Count_consecutive = 0;
+
+   return compressed.length() < str.length() ? compressed.toString() : str;
+}
+
+Approach 3: Count first before compressing to String
+Check in advance, whether compressed length is greater than the input string. It will avoid us having to create a string we never use. Drawback, it causes a second loop through the chars and also adds duplicated code.
+String compress(String str) {
+    // check final length and return input string if it would be longer
+    Int final_length = count-Compression(str);
+    if(final_length >= str.length()) return str;
+
+ StringBuilder compressed = new StringBuilder(final_length);
+    Int count_consecutive = 0;
+    for (int i = 0; i < str.length(); i++)
+        count_consecutive ++;
+    // next char is different than current, append this char to result
+    if (i + 1>= str.length() || str.charAt(i) != str.charAt(i+1)
+        compressed.append(str.charAt(i))
+        compressed.append(count_consecutive);
+        count_consecutive = 0;
+    return compressed.toString();
+}
+int count-Compression(String s){
+    int compressed_length = 0, count_consecutive = 0;
+   for (int i = 0; i < str.length(); i++) {
+       count_consecutive ++;
+      // if next char is different than current, increase the length
+        if (i + 1>= str.length() || str.charAt(i) != str.charAt(i+1)
+               compressed_length += 1 + String.valueOf(count_consecutive).length();
+               count_consecutive = 0;
+return compressed_length;
+   }
+}
+
+```
+
+
+  </details>
   + 1.7 Rotate Matrix:
   + 1.8 Zero Matrix:
   + 1.9 String Rotation:
