@@ -140,8 +140,6 @@ public String urlify(String str, int trueLengh)
 Time: O(n). Space O(n).
 
 ```
-
-
   </details>
   
   <details>
@@ -362,10 +360,48 @@ return compressed_length;
 }
 
 ```
-
-
   </details>
-  + 1.7 Rotate Matrix:
+  
+  <details>
+    <summary>1.7 Rotate Matrix</summary>
+  
+```
+1.7:   Rotate Matrix: Given an image represented by an nxn matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. Can you do this in place?
+The easiest way to do this is to implement the rotation in layers. Perform a circular rotation on each layer. Move top ege to the right edge…
+Approach 1: Use an Array
+Copy the top edge to an array, and then move the left to the top, the bottom to the left, and so on. 
+Time: O(n). Space: O(n)
+Approach 2: In place swapping
+for i = 0 to n
+  temp = top[i]
+  top[i] = left[i]
+  left[i] = bottom[i]
+  bottom[i] = right[i]
+  top[i] = temp[i]
+Perform such a swap on each layer; i.e., swap index by index,, starting from the outermost layer and working our way inwards. (Alternatively, we can start from the inner layer and work outwards).
+boolean rotate(int[][] matrix) {
+    if(matrix.length == 0 || matrix.length != matrix[0].length) return false;
+    Int n = matrix.length;
+   for(int layer = 0; layer < n/2; layer ++)
+       int first = layer;
+       Int last  = n - 1 - layer;
+      for(int i = first; i < last; i++)
+            int offset = i - first;
+            int top = matrix[first][i]; // save top
+            // left -> top
+           matrix[first][i] = matrix[last-offset][first];
+          // bottom -> left 
+          matrix[last-offset][first] = matrix[last][last-offset];
+         // right -> bottom
+          matrix[last][last-offset] = matrix[i][last];
+       // top -> right
+         matrix[i][last] = top; // right <- saved top
+}
+Time: O(n2), BCRT b/c must touch all n2 elements. Space: O(1).
+
+```
+  </details>
+  
   + 1.8 Zero Matrix:
   + 1.9 String Rotation:
  </details> 
