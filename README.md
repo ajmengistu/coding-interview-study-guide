@@ -667,8 +667,31 @@ public int maxProfit(int[] prices) {
 * 1.3 First Unique Character in a String
 * 1.4 Valid Anagram
 </details>
-
 ## Programming Interview Exposed 
+
+<details>
+    <summary>1.3 Urlify</summary>
+  
+```
+1.3 URLify: Replace all spaces in string with “%20”
+------------------------------------------------------------------------------------------------------------
+Common approach in string manipulation problems is to edit the string starting from the end and working backwards. This is useful because we have an extra buffer at the end, which allows us to change characters w/o worrying about what we’re overwriting. 
+public String urlify(String str, int trueLengh)
+    Char[] schar s.toCharArray();
+    for (int i=trueLength - 1, j = schar.length - 1; i >= 0; i--){
+        if(shcar[i] != ‘ ‘)
+            schar[j] = schar[i];
+        else
+              schar[j--] = ‘0’
+             schar[j--] = ‘2’
+            schar[j--] = ‘%’
+    // overwrite str with schar. array using for loop,
+}
+Time: O(n). Space O(n).
+
+```
+
+  </details>
 <details>
  <summary>Reading Notes</summary>
  
