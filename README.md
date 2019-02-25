@@ -673,21 +673,74 @@ public int maxProfit(int[] prices) {
     <summary>1.3 Urlify</summary>
   
 ```
-1.3 URLify: Replace all spaces in string with “%20”
-------------------------------------------------------------------------------------------------------------
-Common approach in string manipulation problems is to edit the string starting from the end and working backwards. This is useful because we have an extra buffer at the end, which allows us to change characters w/o worrying about what we’re overwriting. 
-public String urlify(String str, int trueLengh)
-    Char[] schar s.toCharArray();
-    for (int i=trueLength - 1, j = schar.length - 1; i >= 0; i--){
-        if(shcar[i] != ‘ ‘)
-            schar[j] = schar[i];
-        else
-              schar[j--] = ‘0’
-             schar[j--] = ‘2’
-            schar[j--] = ‘%’
-    // overwrite str with schar. array using for loop,
+3. Rotate Array:
+Hint: modulus: 2 % 5 = 2, 5 % 2 = 1. k %= nums.length
+Given an array and int k, rotate the array to the right by k steps, k is non-neg.
+______________________________________________________
+Approach 1: Brute Force (naive)
+Simplest approach is to rotate all the elements of the array in k steps by rotating the elements by 1 unit in each step. 
+public void rotate(int [] nums, int k){
+    int temp, prev; I 
+    for(int i=0; i<k; i++){
+       prev = nums[nums.length - 1];
+       for(int j=0; j<nums.length; j++){
+           temp = nums[j];
+           nums[j] = prev;
+           prev = temp;
+       }
+    }
 }
-Time: O(n). Space O(n).
+Time: O(n*k)-all numbers are shifted by one step k times. Space: n
+Approach 2: Using Extra Array
+We use an extra array in which we place every element of the array at its correct position i.e. the number at index i in the original array is placed at the index (i + k). Then, we copy the new array to the original one. 
+public void rotate(int [] nums, int k){
+    int[] a = new int[nums.length];
+    for(int i=0; i<nums.length; i++){
+       a[(i + k) % nums.length] = nums[i];
+    }
+    for(int j=0; j<nums.length; j++){
+        Nums[i] = a[i];
+    }
+}
+Time: O(n)- one pass to put and another to copy. Space: O(n)
+Approach 3: Using Cyclic Replacement
+We can directly place every element of the array at its required correct position. But, if we do that, we’ll destroy the original element.Thus, we need to store the number being replaced in a temp variable. Then, we place temp at its correct position and so on, n times, where n is the length of array. For the case, where if we eventually reach the index from which we originally started, when we hit the original integer’s index again, we start the same process with the number following it. When we reach back to the original index, we have placed n/k elements at their correct position, that’s how many elements we hit in first cycle. 
+public void rotate(int [] nums, int k){
+    k = k % nums.length;
+    int count = 0;
+    for(int start=0; count<nums.length; start++){
+        int current = start;
+        int prev = nums[start];
+        do {
+            int next = (current + k) % nums.length;
+            int temp =  nums[next];
+            Nums	[next] = prev;
+            current = next;
+            count++;
+        } while( start != current);
+    }
+}
+Time: O(n)-one pass. Space O(1)-constant extra space is used..
+Approach 4: Using Reverse Method
+This approach is based on the fact that when we rotate the array k times, k elements from the back end of the array come to the front and the rest of the elements from the front shift backwards.
+First reverse all the elements of the array. Then, reverse the first k elements followed by reversing the remaining (n - k) elements. 
+public void rotate(int [] nums, int k) {
+    k %= nums.length;
+    reverse(nums, 0, nums.length - 1);
+    reverse(nums, 0, k -1);
+    reverse(nums, 0, k, nums.length - 1)
+}
+public void reverse(int [] nums, int start, int end){
+    while ( start < end) {
+        int temp = nums[start];
+        nums[start] = nums[end];
+        nums[end] = temp;
+        start++;
+        end--;
+    }
+}
+Time: O(n) -n being num of elts in array. Space: O(1)-no extra space used.
+
 
 ```
 
